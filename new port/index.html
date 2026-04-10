@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavithra | Software Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-black tracking-tighter uppercase gradient-text">PAVITHRA</span>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#education" class="hover:text-blue-600">Education</a>
+                <a href="#internship" class="hover:text-blue-600">Internship</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact"
+                    class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-900 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-slate-100 shadow-lg absolute w-full left-0 top-full">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium text-center">
+                <a href="#home" class="mobile-link hover:text-blue-600 py-2 border-b border-slate-50">Home</a>
+                <a href="#about" class="mobile-link hover:text-blue-600 py-2 border-b border-slate-50">About</a>
+                <a href="#skills" class="mobile-link hover:text-blue-600 py-2 border-b border-slate-50">Skills</a>
+                <a href="#education" class="mobile-link hover:text-blue-600 py-2 border-b border-slate-50">Education</a>
+                <a href="#internship" class="mobile-link hover:text-blue-600 py-2 border-b border-slate-50">Internship</a>
+                <a href="#projects" class="mobile-link hover:text-blue-600 py-2 mb-2">Projects</a>
+                <a href="#contact" class="mobile-link bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200 inline-block mx-auto mt-2 mb-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <!-- Hero -->
+    <section class="pt-32 pb-20 px-6 bg-[#ebedff] min-h-[90vh] flex items-center" id="home">
+        <div class="max-w-6xl mx-auto w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12" data-aos="fade-up">
+            <!-- Left Content -->
+            <div class="text-left md:w-1/2">
+                <h2 class="text-4xl md:text-[2.75rem] font-semibold text-[#374151] mb-2 font-sans">Hello! I'm</h2>
+                <h1 class="text-6xl md:text-[5rem] font-extrabold text-[#6d28d9] mb-4 tracking-tight drop-shadow-sm">Pavithra</h1>
+                <h3 class="text-3xl md:text-[2.25rem] font-semibold text-[#374151] mb-8 flex items-center gap-2">
+                    I'm <span class="text-orange-500 flex items-center">Web Developer<span class="inline-block w-[3px] h-[34px] bg-orange-500 animate-pulse ml-[2px]"></span></span>
+                </h3>
+                <p class="text-[1.1rem] text-slate-500 leading-loose mb-10 max-w-lg font-medium">
+                    I'm a Front-End Developer who creates responsive and easy-to-use websites. I work with HTML, CSS, and JavaScript to build clean designs and smooth user experiences across all devices.
+                </p>
+                <div>
+                    <a href="#projects" class="inline-block bg-[#ff8a00] text-white font-bold px-8 py-3 rounded-full hover:shadow-lg hover:shadow-orange-300 transition-all transform hover:-translate-y-1 text-lg">
+                        View my work
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content (Image) -->
+            <div class="md:w-1/2 flex justify-center md:justify-end mb-10 md:mb-0">
+                <div class="relative rounded-full border-[6px] border-[#ffb142] p-1 w-72 h-72 md:w-[420px] md:h-[420px] shadow-2xl shadow-indigo-200/50">
+                    <img src="./profile.jpeg" alt="Pavithra" class="rounded-full w-full h-full object-cover object-[center_15%]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-[#f8f9ff]" id="about">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold text-[#1e293b] mb-12 tracking-wide" data-aos="fade-down">About</h2>
+            
+            <div class="relative bg-white rounded-[2rem] p-10 md:p-14 shadow-[0_15px_50px_-15px_rgba(0,0,0,0.1)] mx-auto overflow-hidden text-center" data-aos="fade-up">
+                <p class="text-slate-600 text-[1.1rem] leading-loose font-medium">
+                    I am a passionate Frontend Developer with strong skills in HTML, CSS, JavaScript, Bootstrap, and React. I enjoy creating responsive, user-friendly, and visually appealing web applications. I focus on writing clean code and building modern websites with smooth user experience. I am continuously learning new technologies and improving my development skills to build real-world applications
+                </p>
+                
+                <div class="absolute bottom-0 left-0 w-full h-[6px] bg-gradient-to-r from-yellow-400 to-orange-400"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-white" id="skills">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-right">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in">
+                    <div class="flex gap-3">
+                        <i class="fab fa-html5 text-orange-500 text-4xl mb-4"></i>
+                        <i class="fab fa-css3-alt text-blue-500 text-4xl mb-4"></i>
+                    </div>
+                    <h3 class="font-bold">HTML & CSS</h3>
+                    <p class="text-sm text-slate-500">Web Foundations</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <i class="fab fa-js text-yellow-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">JavaScript (ES6+)</h3>
+                    <p class="text-sm text-slate-500">Logic & Functionality</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <i class="fab fa-react text-blue-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">React.js</h3>
+                    <p class="text-sm text-slate-500">Component-driven UI</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <i class="fab fa-node-js text-green-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Node & Express</h3>
+                    <p class="text-sm text-slate-500">Backend Architectures</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <i class="fas fa-database text-orange-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">MongoDB </h3>
+                    <p class="text-sm text-slate-500">Data Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills Section -->
+    <section class="py-20 bg-white" id="soft-skills">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-right">Soft Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in">
+                    <i class="far fa-comment text-blue-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Communication</h3>
+                    <p class="text-sm text-slate-500">Effective expression</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="100">
+                    <i class="fas fa-th-large text-purple-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Management Skills</h3>
+                    <p class="text-sm text-slate-500">Organizing priorities</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <i class="fas fa-puzzle-piece text-orange-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Problem Solving</h3>
+                    <p class="text-sm text-slate-500">Analytical solutions</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <i class="fas fa-brain text-cyan-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Critical Thinking</h3>
+                    <p class="text-sm text-slate-500">Objective reasoning</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <i class="fas fa-crown text-yellow-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Leadership</h3>
+                    <p class="text-sm text-slate-500">Inspiring teams</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <i class="fas fa-sync-alt text-green-500 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Adaptability</h3>
+                    <p class="text-sm text-slate-500">Embracing change</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <i class="fas fa-user-friends text-pink-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">TeamWork</h3>
+                    <p class="text-sm text-slate-500">Collaborative spirit</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-2xl hover:bg-slate-50 transition" data-aos="zoom-in"
+                    data-aos-delay="700">
+                    <i class="far fa-clock text-teal-400 text-4xl mb-4"></i>
+                    <h3 class="font-bold">Time Management</h3>
+                    <p class="text-sm text-slate-500">Efficient pacing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-24 bg-white" id="education">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <span class="text-purple-600 font-bold tracking-widest uppercase text-sm">MY JOURNEY</span>
+                <h2 class="text-4xl font-extrabold text-[#1e293b] mt-3">My Education</h2>
+            </div>
+            
+            <div class="space-y-8">
+                <!-- Degree 1 -->
+                <div class="bg-[#f8f9ff] rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-50/50 flex flex-col md:flex-row gap-8 items-start" data-aos="fade-up">
+                    <div class="md:w-32 flex-shrink-0 flex justify-center md:pt-2">
+                        <i class="fas fa-graduation-cap text-5xl text-yellow-500"></i>
+                    </div>
+                    <div class="flex-1">
+                        <span class="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full text-[11px] font-bold tracking-wider mb-4 uppercase">2023 - 2026</span>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">Bachelor of Information Technology</h3>
+                        <p class="text-slate-500 font-medium mb-5">Government Arts College(Autonomous).Coimbatore</p>
+                        <ul class="list-disc list-outside text-slate-600 space-y-2 ml-5 marker:text-slate-400">
+                            <li>Bharathiyar University</li>
+                            <li>Currently Pursuing</li>
+                            <li>CGPA: 7.1</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="bg-[#f8f9ff] rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-50/50 flex flex-col md:flex-row gap-8 items-start" data-aos="fade-up" data-aos-delay="100">
+                    <div class="md:w-32 flex-shrink-0 flex justify-center md:pt-2">
+                        <i class="fas fa-school text-5xl text-yellow-500"></i>
+                    </div>
+                    <div class="flex-1">
+                        <span class="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full text-[11px] font-bold tracking-wider mb-4 uppercase">2021 - 2022</span>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">HSC</h3>
+                        <p class="text-slate-500 font-medium mb-5">Kalaimagal Kalalaya Matric Higher Secondary School,Mathur-635203</p>
+                        <ul class="list-disc list-outside text-slate-600 space-y-2 ml-5 marker:text-slate-400">
+                            <li>CGPA: 83.6</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Degree 3 -->
+                <div class="bg-[#f8f9ff] rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-50/50 flex flex-col md:flex-row gap-8 items-start" data-aos="fade-up" data-aos-delay="200">
+                    <div class="md:w-32 flex-shrink-0 flex justify-center md:pt-2">
+                        <i class="fas fa-book text-5xl text-yellow-500"></i>
+                    </div>
+                    <div class="flex-1">
+                        <span class="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full text-[11px] font-bold tracking-wider mb-4 uppercase">2019 - 2020</span>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">SSLC</h3>
+                        <p class="text-slate-500 font-medium mb-5">Kalaimagal Kalalaya Matric Higher Secondary School,Mathur-635203</p>
+                        <ul class="list-disc list-outside text-slate-600 space-y-2 ml-5 marker:text-slate-400">
+                            <li>CGPA: 96</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section class="py-24 bg-[#f8f9ff]" id="internship">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <span class="text-purple-600 font-bold tracking-widest uppercase text-sm">MY JOURNEY</span>
+                <h2 class="text-4xl font-extrabold text-[#1e293b] mt-3">My Internship and Professional Experience</h2>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-indigo-50 flex flex-col md:flex-row gap-8 items-start" data-aos="fade-up">
+                <div class="md:w-32 flex-shrink-0 flex justify-center md:pt-2">
+                    <i class="fas fa-briefcase text-5xl text-yellow-500"></i>
+                </div>
+                <div class="flex-1">
+                    <span class="inline-block bg-blue-600 text-white px-4 py-1.5 rounded-full text-[11px] font-bold tracking-wider mb-4 uppercase">SEPTEMBER 2025 - PRESENT</span>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Project intern</h3>
+                    <p class="text-slate-500 font-medium mb-5">BuleKode Solution-Coimbatore</p>
+                    <ul class="list-disc list-outside text-slate-600 space-y-3 ml-5 marker:text-slate-400 leading-relaxed">
+                        <li>Engineered high-performance user interfaces using Vanilla JavaScript (ES6+) and HTML5, utilizing asynchronous programming to handle API data.</li>
+                        <li>Executed end-to-end frontend deployment pipelines, ensuring a bug-free rollout of new features.</li>
+                        <li>Developed a custom component-based architecture using template literals and DOM manipulation, reducing code redundancy by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-24 px-6 bg-[#ebedf8]" id="projects">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-14">
+                <h2 class="text-4xl font-extrabold text-[#1e293b]">Latest Projects</h2>
+                <a href="https://github.com/Pavithrasaravanan-7" class="text-blue-600 font-bold hover:underline mb-1">View
+                    all on GitHub &rarr;</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Homie Recipes -->
+                <div class="bg-[#f8f9fc] rounded-[1.25rem] p-3 shadow-[0_10px_35px_-10px_rgba(0,0,0,0.12)] border border-white flex flex-col items-center hover:-translate-y-1 transition-transform duration-300"
+                    data-aos="fade-up">
+                    <div
+                        class="w-full h-48 rounded-[1rem] flex items-center justify-center mb-6 relative overflow-hidden bg-slate-100">
+                        <img src="./homie.png" alt="Homie Recipes" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-[1.15rem] font-bold text-[#374151] mb-4 text-center tracking-wide">Homie Recipe -static website</h3>
+                    <div class="flex gap-2 justify-center mb-4 flex-wrap">
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">HTML</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">CSS</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">App</span>
+                    </div>
+                    <a href="#" class="text-[#f59e0b] font-bold text-[14.5px] hover:text-orange-500 transition-colors mb-2">Read More</a>
+                </div>
+
+                <!-- Project 2: Tourism Management System -->
+                <div class="bg-[#f8f9fc] rounded-[1.25rem] p-3 shadow-[0_10px_35px_-10px_rgba(0,0,0,0.12)] border border-white flex flex-col items-center hover:-translate-y-1 transition-transform duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-full h-48 rounded-[1rem] flex items-center justify-center mb-6 relative overflow-hidden bg-slate-100">
+                        <img src="./travel.png" alt="Tourism Management System" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-[1.15rem] font-bold text-[#374151] mb-4 text-center tracking-wide">Tourism Management System</h3>
+                    <div class="flex gap-2 justify-center mb-4 flex-wrap">
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">REACT.JS</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">MONGODB</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">EXPRESS</span>
+                    </div>
+                    <a href="#" class="text-[#f59e0b] font-bold text-[14.5px] hover:text-orange-500 transition-colors mb-2">Read More</a>
+                </div>
+
+                <!-- Project 3: KFC UI Clone -->
+                <div class="bg-[#f8f9fc] rounded-[1.25rem] p-3 shadow-[0_10px_35px_-10px_rgba(0,0,0,0.12)] border border-white flex flex-col items-center hover:-translate-y-1 transition-transform duration-300"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="w-full h-48 rounded-[1rem] flex items-center justify-center mb-6 relative overflow-hidden bg-slate-100">
+                        <img src="./kfc.png" alt="KFC UI Clone" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-[1.15rem] font-bold text-[#374151] mb-4 text-center tracking-wide">KFC UI Clone</h3>
+                    <div class="flex gap-2 justify-center mb-4 flex-wrap">
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">BOOTSTRAP</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">JAVASCRIPT</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">HTML/CSS</span>
+                    </div>
+                    <a href="#" class="text-[#f59e0b] font-bold text-[14.5px] hover:text-orange-500 transition-colors mb-2">Read More</a>
+                </div>
+
+                <!-- Project 4: Traditional Medicine Practitioners -->
+                <div class="bg-[#f8f9fc] rounded-[1.25rem] p-3 shadow-[0_10px_35px_-10px_rgba(0,0,0,0.12)] border border-white flex flex-col items-center hover:-translate-y-1 transition-transform duration-300"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div
+                        class="w-full h-48 rounded-[1rem] flex items-center justify-center mb-6 relative overflow-hidden bg-slate-100">
+                        <img src="./traditional.png" alt="Traditional Medicine Practitioners" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-[1.15rem] font-bold text-[#374151] mb-4 text-center tracking-wide">Traditional Medicine Practitioners</h3>
+                    <div class="flex gap-2 justify-center mb-4 flex-wrap">
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">REACT.JS</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">CSS</span>
+                    </div>
+                    <a href="#" class="text-[#f59e0b] font-bold text-[14.5px] hover:text-orange-500 transition-colors mb-2">Read More</a>
+                </div>
+
+                <!-- Project 5: Cosmetics Cosma -->
+                <div class="bg-[#f8f9fc] rounded-[1.25rem] p-3 shadow-[0_10px_35px_-10px_rgba(0,0,0,0.12)] border border-white flex flex-col items-center hover:-translate-y-1 transition-transform duration-300"
+                    data-aos="fade-up" data-aos-delay="800">
+                    <div
+                        class="w-full h-48 rounded-[1rem] flex items-center justify-center mb-6 relative overflow-hidden bg-slate-100">
+                        <img src="./cosma.png" alt="Cosmetics Cosma" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-[1.15rem] font-bold text-[#374151] mb-4 text-center tracking-wide">Cosmetics Cosma</h3>
+                    <div class="flex gap-2 justify-center mb-4 flex-wrap">
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">E-COMMERCE</span>
+                        <span class="bg-[#6b7280] text-white px-3 py-[2px] rounded-full text-[11px] font-bold tracking-wider">REACT.JS</span>
+                    </div>
+                    <a href="#" class="text-[#f59e0b] font-bold text-[14.5px] hover:text-orange-500 transition-colors mb-2">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-[#f8f9ff]" id="contact">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-down">
+                <h2 class="text-[1.35rem] font-medium tracking-[0.2em] uppercase text-indigo-600">Get In Touch</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Info Side -->
+            <div class="space-y-10 md:pl-8" data-aos="fade-right">
+                
+                <!-- Info Item 1 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-orange-500 text-2xl mt-0.5">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-[16px] font-bold text-slate-800 tracking-wide mb-1">Address</h4>
+                        <p class="text-slate-500 font-medium text-[15px]">Coimbatore, Tamil Nadu, India</p>
+                    </div>
+                </div>
+
+                <!-- Info Item 2 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-orange-500 text-[1.4rem] mt-0.5">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-[16px] font-bold text-slate-800 tracking-wide mb-1">LinkedIn</h4>
+                        <p class="text-slate-500 font-medium text-[15px]">Pavithra Saravanan</p>
+                    </div>
+                </div>
+
+                <!-- Info Item 3 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-orange-500 text-[1.4rem] mt-0.5">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-[16px] font-bold text-slate-800 tracking-wide mb-1">GitHub</h4>
+                        <p class="text-slate-500 font-medium text-[15px]">github.com/Pavithrasaravanan-7</p>
+                    </div>
+                </div>
+
+                <!-- Info Item 4 -->
+                <div class="flex items-start gap-4">
+                    <div class="text-orange-500 text-[1.3rem] mt-1 pr-0.5">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-[16px] font-bold text-slate-800 tracking-wide mb-1">Email</h4>
+                        <p class="text-slate-500 font-medium text-[15px]">pavi.saravana2005@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Form Side -->
+            <div class="bg-white p-8 md:p-10 rounded-[1.5rem] shadow-[0_15px_40px_-15px_rgba(0,0,0,0.06)] border border-indigo-50/80" data-aos="fade-left">
+                <h3 class="text-[1.35rem] font-bold text-[#1e293b] mb-8 tracking-wide">Send Message</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full bg-white border border-indigo-100 rounded-[10px] px-4 py-3 placeholder-slate-400 text-[15px] text-slate-700 outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400 transition-all font-medium">
+                    <input type="email" placeholder="Your Email" class="w-full bg-white border border-indigo-100 rounded-[10px] px-4 py-3 placeholder-slate-400 text-[15px] text-slate-700 outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400 transition-all font-medium">
+                    <input type="text" placeholder="Mobile No." class="w-full bg-white border border-indigo-100 rounded-[10px] px-4 py-3 placeholder-slate-400 text-[15px] text-slate-700 outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400 transition-all font-medium">
+                    <textarea rows="4" placeholder="Your Message" class="w-full bg-white border border-indigo-100 rounded-[10px] px-4 py-3 placeholder-slate-400 text-[15px] text-slate-700 outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400 transition-all font-medium resize-none"></textarea>
+                    
+                    <div class="pt-2 relative flex items-center justify-center">
+                        <button type="submit" class="w-full relative bg-gradient-to-r from-orange-400 to-orange-500 text-white font-bold tracking-wide rounded-full py-3.5 pr-8 transition-all hover:shadow-lg hover:shadow-orange-200/50 group">
+                            Submit Message
+                            <!-- Arrow Overlapping Button -->
+                            <div class="absolute right-[2px] top-1/2 -translate-y-1/2 w-[42px] h-[42px] bg-orange-400 flex items-center justify-center rounded-full border-[3px] border-white text-sm shadow-sm transition-all group-hover:bg-orange-500">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Very minimal simple footer -->
+    <footer class="bg-white border-t border-slate-100 py-6 text-center text-slate-500 text-sm">
+        &copy; 2024 Pavithra. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            }
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+        </script>
+</body>
+
+</html>
